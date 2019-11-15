@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_my"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/shape_circle_corner"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/iv_head_pic"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="15dp"
+            app:riv_corner_radius="99dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="宝宝游泳"
+                android:textColor="@color/color_33"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="宝宝游泳"
+                android:textColor="@color/color_33"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_create_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="无期限"
+                android:textColor="@color/color_99"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="75dp"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="剩余25次"
+                android:textColor="@color/color_first"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/xiayb_icon_h" />
+
+    </LinearLayout>
+
+</LinearLayout>

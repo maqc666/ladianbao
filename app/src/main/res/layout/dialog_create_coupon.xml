@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="400dp"
+    android:background="@drawable/bg_market_list"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_weight="1"
+            android:text="选择创建类型"
+            android:textColor="#ff333333"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginRight="25dp"
+            android:src="@mipmap/but_guanb" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_dan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/bg_create_coupon_item"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginBottom="17dp"
+            android:src="@mipmap/icon_manjq" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="满减券"
+                android:textColor="#ff333333"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="满足消费金额可减金额的优惠"
+                android:textColor="#ff999999"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginRight="14dp"
+            android:src="@mipmap/xiayb_icon_h" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_fen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/bg_create_coupon_item"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginBottom="17dp"
+            android:src="@mipmap/icon_zhekq" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="折扣券"
+                android:textColor="#ff333333"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="设置折扣券数值"
+                android:textColor="#ff999999"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginRight="14dp"
+            android:src="@mipmap/xiayb_icon_h" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_zheng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/bg_create_coupon_item"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginBottom="17dp"
+            android:src="@mipmap/icon_wumnkq" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="无门槛"
+                android:textColor="#ff333333"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="店铺所有商品的优惠"
+                android:textColor="#ff999999"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginRight="14dp"
+            android:src="@mipmap/xiayb_icon_h" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_dui"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/bg_create_coupon_item"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginBottom="17dp"
+            android:src="@mipmap/icon_lip" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="赠品"
+                android:textColor="#ff333333"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="商品兑换的优惠"
+                android:textColor="#ff999999"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginRight="14dp"
+            android:src="@mipmap/xiayb_icon_h" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

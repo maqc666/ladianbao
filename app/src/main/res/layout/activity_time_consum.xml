@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.main.memberlist.detail.list.timeconsum.TimeConsumActivity">
+
+    <include layout="@layout/layout_titlebar" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.scwang.smartrefresh.header.MaterialHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/head_pic"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="15dp"
+                        android:src="@mipmap/img_touxzw"
+                        app:riv_corner_radius="99dp" />
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:text="罩得住"
+                        android:textColor="@color/color_33"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="次卡数量:  "
+                        android:textColor="@color/color_99"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_count_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="@color/color_first"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:text="张"
+                        android:textColor="@color/color_first"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="会员次卡列表("
+                        android:textColor="@color/color_99"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="@color/color_99"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=")"
+                        android:textColor="@color/color_99"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="vertical">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recyclerView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <include
+                            android:id="@+id/layout_empty"
+                            layout="@layout/layout_empty" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_zanwu"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@mipmap/zanwhy_img" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="暂无会员"
+                            android:textColor="@color/color_c5"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+
+        </android.support.v4.widget.NestedScrollView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

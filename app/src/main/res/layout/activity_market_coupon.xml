@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/layout_titlebar" />
+
+        <LinearLayout
+            android:id="@+id/ll_search"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_user_detail"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/bg_market_coupon_btn"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/icon_gengd" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_add"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/bg_market_coupon_btn"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/icon_tianj" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.flyco.tablayout.SlidingTabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        app:tl_indicator_color="@color/color_main"
+        app:tl_indicator_corner_radius="1.5dp"
+        app:tl_indicator_height="3dp"
+        app:tl_indicator_width="30dp"
+        app:tl_tab_space_equal="true"
+        app:tl_textSelectColor="@color/color_main"
+        app:tl_textUnselectColor="@color/color_66"
+        app:tl_textsize="17sp" />
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_eee" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

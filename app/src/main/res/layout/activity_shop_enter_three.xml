@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <include layout="@layout/layout_titlebar_centre" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ffeeeeee" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_1"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginTop="26dp"
+                    android:background="@drawable/bg_circle_blue"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="@color/white"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="商家信息"
+                    android:textColor="#ff1c7aff"
+                    android:textSize="12sp"
+                    app:layout_constraintLeft_toLeftOf="@+id/tv_1"
+                    app:layout_constraintRight_toRightOf="@+id/tv_1"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_1" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="3dp"
+                    android:background="#ff1c7aff"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_1"
+                    app:layout_constraintLeft_toRightOf="@+id/tv_1"
+                    app:layout_constraintRight_toLeftOf="@+id/tv_2"
+                    app:layout_constraintTop_toTopOf="@+id/tv_1" />
+
+                <TextView
+                    android:id="@+id/tv_2"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="26dp"
+                    android:background="@drawable/bg_circle_blue"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textColor="@color/white"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="商家认证"
+                    android:textColor="#ff1c7aff"
+                    android:textSize="12sp"
+                    app:layout_constraintLeft_toLeftOf="@+id/tv_2"
+                    app:layout_constraintRight_toRightOf="@+id/tv_2"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_2" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="3dp"
+                    android:background="#ff1c7aff"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_2"
+                    app:layout_constraintLeft_toRightOf="@+id/tv_2"
+                    app:layout_constraintRight_toLeftOf="@+id/tv_3"
+                    app:layout_constraintTop_toTopOf="@+id/tv_2" />
+
+                <TextView
+                    android:id="@+id/tv_3"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="26dp"
+                    android:layout_marginRight="23dp"
+                    android:background="@drawable/bg_circle_blue"
+                    android:gravity="center"
+                    android:text="3"
+                    android:textColor="@color/white"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="提交成功"
+                    android:textColor="#ff1c7aff"
+                    android:textSize="12sp"
+                    app:layout_constraintLeft_toLeftOf="@+id/tv_3"
+                    app:layout_constraintRight_toRightOf="@+id/tv_3"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_3" />
+
+
+            </android.support.constraint.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/bg_btn_withe"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="107dp"
+                    android:layout_height="112dp"
+                    android:layout_marginTop="33dp"
+                    android:src="@mipmap/img_chengtj" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="提交成功！"
+                    android:textColor="#ff333333"
+                    android:textSize="20sp" />
+
+                <View
+                    android:layout_width="32dp"
+                    android:layout_height="2dp"
+                    android:background="#EEEEEE" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="尊敬的商家，感谢您的到来"
+                    android:textColor="#ff999999"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="丫鲤工作人员将在3个工作日内与您联系"
+                    android:textColor="#ff999999"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="有任何问题，您也可以拨打我们的客服电话："
+                    android:textColor="#ff999999"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:text="400-xxx-xxx-xxxx"
+                    android:textColor="#ff999999"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_submit"
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="21dp"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/bg_btn_blue"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="知道了"
+                    android:textColor="#ffffffff"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

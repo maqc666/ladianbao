@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_my"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/shape_circle_corner"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_image"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:scaleType="fitXY"
+               />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="宝宝游泳"
+                    android:textColor="@color/color_33"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_surplus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="无期限"
+                    android:textColor="@color/color_99"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="75dp"
+                android:layout_height="40dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/cikllb_img" />
+
+                <TextView
+                    android:id="@+id/tv_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="0次"
+                    android:textColor="@color/color_first"
+                    android:textSize="17sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/cor_xuxian" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="8dp"
+                android:text="使用时间:"
+                android:textColor="@color/color_99"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_use_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="2019-07-26 10:33"
+                android:textColor="@color/color_99"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="使用"
+                android:textColor="@color/color_33"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_use_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/color_ff4b"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:text="次"
+                android:textColor="@color/color_33"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

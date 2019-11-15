@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/color_first</color>
+    <color name="colorPrimaryDark">@color/color_first</color>
+    <color name="colorAccent">@color/color_first</color>
+
+    <color name="color_main">@color/colorAccent</color>
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_tran">#00000000</color>
+    <color name="color_49">#49CB79</color>
+
+    <color name="color_ff4b">#FF4B13</color>
+    <color name="color_text">#333333</color>
+    <color name="color_999">#999999</color>
+    <color name="color_edit">#B2D2FF</color>
+
+    <color name="color_c5">#c5c5c5</color>
+    <color name="color_wait">#ffffff</color><!-- 白色-->
+    <color name="color_f7b">#F7B32A</color>
+    <color name="color_f7c">#F7C72A</color>
+    <color name="color_F5F8">#F5F8FA</color>
+    <color name="color_eee">#EEEEEE</color>
+    <color name="color_ddd">#DDDDDD</color>
+    <color name="color_fbf">#FBFFEF</color>
+    <color name="color_99">#999999</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="color_f7b52a">#F7B52A</color>
+
+    <color name="color_f9f9">#F9F9F9</color>
+
+    <color name="transparent_helf2">#59000000</color>
+
+    <color name="color_e2c">#E2C36E</color>
+    <color name="color_e5d">#E5D19A</color>
+    <color name="white">#FFFFFF</color>
+    <color name="color_first">#1C7AFF</color>
+
+    <color name="color_33">#333333</color>
+    <color name="black">#000000</color>
+    <color name="color_66">#666666</color>
+
+
+    <!-- **************************pickerview选择器常用颜色值********************************** -->
+    <color name="pickerview_divider_color">#9D9D9D</color>
+    <color name="pickerview_cancel_text_color">#979696</color>
+    <color name="pickerview_submit_text_color">@color/color_main</color>
+    <color name="pickerview_title_text_color">#333333</color>
+    <color name="pickerview_center_text_color">#333333</color>
+
+</resources>

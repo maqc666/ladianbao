@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_rootview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/layout_titlebar" />
+        </RelativeLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="#fff"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:orientation="horizontal"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingBottom="15dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="*"
+                            android:textColor="#FF4B13"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="活动名称"
+                            android:textColor="#ff333333"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/et_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:gravity="right"
+                            android:hint="请输入活动名称"
+                            android:textColor="#ff333333"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="15dp"
+                        android:background="#ffeeeeee" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_prize_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:orientation="horizontal"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingBottom="15dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="*"
+                            android:textColor="#FF4B13"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="活动商品"
+                            android:textColor="#ff333333"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_prize_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="选择商品"
+                            android:textColor="#ff999999"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:src="@mipmap/xiayb_icon_h" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="#fff"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#fff"
+                        android:orientation="horizontal"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingBottom="15dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="*"
+                            android:textColor="#FF4B13"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="助力次数"
+                            android:textColor="#ff333333"
+                            android:textSize="14sp" />
+
+
+                        <EditText
+                            android:id="@+id/et_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:gravity="right"
+                            android:inputType="number"
+                            android:hint="请输入助力次数"
+                            android:textSize="14sp" />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="15dp"
+                        android:background="#ffeeeeee" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_start_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#fff"
+                        android:orientation="horizontal"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingBottom="15dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="*"
+                            android:textColor="#FF4B13"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="开始时间"
+                            android:textColor="#ff333333"
+                            android:textSize="14sp" />
+
+
+                        <TextView
+                            android:id="@+id/tv_start_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2019-08-01"
+                            android:textColor="#ff333333"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:src="@mipmap/xiayb_icon_h" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="15dp"
+                        android:background="#ffeeeeee" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_end_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#fff"
+                        android:orientation="horizontal"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingBottom="15dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="*"
+                            android:textColor="#FF4B13"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="结束时间"
+                            android:textColor="#ff333333"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_end_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2019-08-01"
+                            android:textColor="#ff333333"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:src="@mipmap/xiayb_icon_h" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="15dp"
+                        android:background="#ffeeeeee" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#fff"
+                        android:orientation="horizontal"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingBottom="15dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="*"
+                            android:textColor="#FF4B13"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="备注"
+                            android:textColor="#ff333333"
+                            android:textSize="14sp" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/et_remark"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginRight="15dp"
+                            android:background="@null"
+                            android:hint="请输入活动备注"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#fff"
+                        android:orientation="horizontal"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingBottom="15dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:textColor="#FF4B13"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_limit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0/200"
+                            android:textColor="#ff999999"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="#fff"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#fff"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingBottom="15dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="是否发布"
+                            android:textColor="#ff333333"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:id="@+id/iv_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleType="center"
+                            android:src="@mipmap/but_guanb_n" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_submit"
+                    android:layout_width="300dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginBottom="50dp"
+                    android:background="@drawable/bg_btn_blue"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="确定"
+                        android:textColor="#ffffffff"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+
+    </LinearLayout>
+</RelativeLayout>
+
+

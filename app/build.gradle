@@ -1,0 +1,140 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.yifu.lakabao"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        ndk {
+            //选择要添加的对应cpu类型的.so库。
+            abiFilters 'armeabi-v7a'
+
+            /**
+             *   还可以添加 'x86', 'x86_64', 'mips', 'mips64', "x86", 'x86_64','armeabi','arm64-v8a'
+             *   armeabiv-v7a: 第7代及以上的 ARM 处理器。2011年15月以后的生产的大部分Android设备都使用它.
+             *   arm64-v8a: 第8代、64位ARM处理器，很少设备，三星 Galaxy S6是其中之一。
+             *   armeabi: 第5代、第6代的ARM处理器，早期的手机用的比较多。
+             *   x86: 平板、模拟器用得比较多。
+             *   x86_64: 64位的平板。
+             */
+
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.android.support:design:28.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    /**
+     * 一般项目必须框架
+     * START-------------------
+     */
+    //anko
+    implementation 'org.jetbrains.anko:anko:0.10.5'
+
+    //分包
+    implementation 'com.android.support:multidex:1.0.1'
+    implementation 'org.greenrobot:eventbus:3.1.1'
+
+    //网络请求框架
+    implementation 'com.lzy.net:okgo:3.0.4'
+    implementation 'com.lzy.net:okrx2:2.0.2'
+    implementation 'com.lzy.net:okserver:2.0.5'
+
+    //json解析
+    implementation 'com.alibaba:fastjson:1.2.17'
+    implementation 'com.google.code.gson:gson:2.5'
+
+    //下拉刷新库
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-20'
+    implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0-alpha-20'
+
+    //recycleview管理
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30'
+
+    //权限管理
+    implementation 'com.github.tbruyelle:rxpermissions:0.10.2'
+
+    //圆形头像
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+
+    //图片加载
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    configurations.all {
+        resolutionStrategy {
+            force 'com.github.bumptech.glide:glide:4.5.0'
+            force 'com.github.bumptech.glide:compiler:4.5.0'
+        }
+    }
+
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+
+    /**
+     * END--------------------------
+     */
+
+    /**
+     * 沉浸式状态栏
+     */
+    // 基础依赖包，必须要依赖
+    implementation 'com.gyf.immersionbar:immersionbar:3.0.0-beta05'
+    // fragment快速实现（可选）
+    implementation 'com.gyf.immersionbar:immersionbar-components:3.0.0-beta05'
+    // kotlin扩展（可选）
+    implementation 'com.gyf.immersionbar:immersionbar-ktx:3.0.0-beta05'
+    /**
+     * 蒲公英bug统计
+     */
+    implementation 'com.pgyersdk:sdk:2.8.1'
+
+    //对话框
+    implementation 'com.lxj:xpopup:1.5.0'
+    //轮播图框架
+    implementation 'com.youth.banner:banner:1.4.10'
+    implementation 'com.github.hackware1993:MagicIndicator:1.5.0'
+
+    //tab切换 https://github.com/H07000223/FlycoTabLayout/blob/master/README_CN.md
+    implementation 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
+
+    implementation('com.github.gzu-liyujiang.AndroidPicker:WheelPicker:1.5.6.20181018') {
+        exclude group: 'com.android.support'
+    }
+    implementation 'com.contrarywind:Android-PickerView:4.1.9'
+
+    //弹出框
+    implementation 'com.mylhyl:circleDialog:2.1.6'
+    implementation 'com.android.support:design:28.0.0'
+    implementation "org.jetbrains.anko:anko:0.10.5"
+    implementation 'com.lzy.net:okgo:3.0.4'
+    implementation 'com.android.support:support-v4:28.0.0'
+}
