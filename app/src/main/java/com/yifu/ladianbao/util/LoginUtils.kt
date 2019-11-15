@@ -6,15 +6,7 @@ import com.yifu.ladianbao.ui.login.UserBean
 import com.yifu.ladianbao.util.utilcode.Utils
 
 
-/**
- * Copyright (c) 山东六牛网络科技有限公司 https://liuniukeji.com
- *
- * @Description
- * @Author         wanglf
- * @Copyright      Copyright (c) 山东六牛网络科技有限公司 保留所有版权(https://www.liuniukeji.com)
- * @Date           2019/3/3
- * @ModifiedBy
- */
+
 object LoginUtils {
 
     /**

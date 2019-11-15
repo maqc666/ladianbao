@@ -26,16 +26,7 @@ import java.net.ConnectException
 import java.net.SocketException
 import java.net.UnknownHostException
 
-/**
- * Copyright (c) 山东六牛网络科技有限公司 https://liuniukeji.com
- *
- * @Description
- * @Author (沐枫/hanlin_bj@163.com)
- * @Copyright Copyright (c) 山东六牛网络科技有限公司 保留所有版权(https://www.liuniukeji.com)
- * @Date 2018
- * @CreateBy android_studio
- * @Remarks
- */
+
 abstract class JsonCallback<T>(context: Context, canShow: Boolean = false, message: String = "加载中...") : AbsCallback<T>() {
 
     private val context: Context = context

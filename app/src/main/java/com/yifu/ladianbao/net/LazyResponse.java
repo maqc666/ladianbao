@@ -2,9 +2,7 @@ package com.yifu.ladianbao.net;
 
 import java.io.Serializable;
 
-/**
- * Created by Administrator on 2017/2/27.
- */
+
 
 public class LazyResponse<T> implements Serializable {
     public int status;
