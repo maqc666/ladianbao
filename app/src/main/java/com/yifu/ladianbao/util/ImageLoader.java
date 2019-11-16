@@ -36,7 +36,7 @@ public class ImageLoader {
     public static void loadHead(final Context context, ImageView view, String url) {
         try {
             if (!TextUtils.isEmpty(url) && !url.contains("http"))
-                url = UrlUtils.domain + url;
+                url = UrlUtils.api_http + url;
             RequestOptions options = new RequestOptions();
             options.centerCrop().placeholder(R.mipmap.img_touxzw).error(R.mipmap.img_touxzw);
             Glide.with(context).asBitmap()
@@ -79,7 +79,7 @@ public class ImageLoader {
     public static void loadImage(Context context, ImageView view, String url) {
         try {
             if (!TextUtils.isEmpty(url) && !url.contains("http")) {
-                url = UrlUtils.domain + url;
+                url = UrlUtils.api_http + url;
             }
 //            Log.e("tenda", "url:" + url);
             RequestOptions options = new RequestOptions();
@@ -132,7 +132,7 @@ public class ImageLoader {
     public static void loadHeadDefault(final Context context, ImageView view, String url, int defaultRes) {
         try {
             if (!TextUtils.isEmpty(url) && !url.contains("http"))
-                url = UrlUtils.domain + url;
+                url = UrlUtils.api_http + url;
             RequestOptions options = new RequestOptions();
             options.centerCrop().placeholder(defaultRes).error(defaultRes);
             Glide.with(context).asBitmap()
@@ -154,7 +154,7 @@ public class ImageLoader {
     public static void loadImageDefault(Context context, ImageView view, String url, int defaultRes) {
         try {
             if (!TextUtils.isEmpty(url) && !url.contains("http"))
-                url = UrlUtils.domain + url;
+                url = UrlUtils.api_http + url;
             RequestOptions options = new RequestOptions();
             options.centerCrop().placeholder(defaultRes).error(defaultRes);
             Glide.with(context)

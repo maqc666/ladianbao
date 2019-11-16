@@ -8,10 +8,9 @@
     <color name="color_white">#FFFFFF</color>
     <color name="color_tran">#00000000</color>
     <color name="color_49">#49CB79</color>
-
+    <color name="color_line">#E5E5E5</color>
     <color name="color_ff4b">#FF4B13</color>
     <color name="color_text">#333333</color>
-    <color name="color_999">#999999</color>
     <color name="color_edit">#B2D2FF</color>
 
     <color name="color_c5">#c5c5c5</color>
@@ -35,7 +34,10 @@
     <color name="color_e5d">#E5D19A</color>
     <color name="white">#FFFFFF</color>
     <color name="color_first">#1C7AFF</color>
+    <color name="color_2760t">#2760f9</color>
+    <color name="color_f4">#f4f4f4</color>
 
+    <color name="color_3e97">#3e97fd</color>
     <color name="color_33">#333333</color>
     <color name="black">#000000</color>
     <color name="color_66">#666666</color>

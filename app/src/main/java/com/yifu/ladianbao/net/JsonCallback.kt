@@ -116,9 +116,9 @@ abstract class JsonCallback<T>(context: Context, canShow: Boolean = false, messa
                 }
 
             } else {
-                val code = JSON.parseObject(mResponse).getInteger("status")
-                val result = JSON.parseObject(mResponse).getString("data")
-                val info = JSON.parseObject(mResponse).getString("info")
+                val code = JSON.parseObject(mResponse).getInteger("code")
+                val data = JSON.parseObject(mResponse).getString("data")
+                val msg = JSON.parseObject(mResponse).getString("msg")
                 when {
 //                    code == 1 -> return if (result == "[]" || result == "{}" || TextUtils.isEmpty(result)){
 //                        val simpleResponse = Convert.fromJson(mResponse, SimpleResponse::class.java)
@@ -137,7 +137,7 @@ abstract class JsonCallback<T>(context: Context, canShow: Boolean = false, messa
                         throw IllegalStateException("未登录或登录已过期,请重新登录")
                     }
 //                    code == -1 -> throw IllegalStateException(JSON.parseObject(mResponse).getString("info"))
-                    else -> throw IllegalStateException(JSON.parseObject(mResponse).getString("info"))
+                    else -> throw IllegalStateException(JSON.parseObject(mResponse).getString("msg"))
                 }
             }
         }

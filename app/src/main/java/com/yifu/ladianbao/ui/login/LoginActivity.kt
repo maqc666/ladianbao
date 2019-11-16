@@ -1,14 +1,18 @@
 package com.yifu.ladianbao.ui.login
 
 import android.content.Context
+import android.content.Intent
 import android.text.Editable
 import android.text.method.HideReturnsTransformationMethod
 import android.text.method.PasswordTransformationMethod
 import android.view.WindowManager
 import android.widget.EditText
+import android.widget.Toast
 import com.gyf.immersionbar.ktx.immersionBar
 import com.yifu.ladianbao.R
 import com.yifu.ladianbao.base.BaseActivity
+import com.yifu.ladianbao.ui.MainActivity
+import com.yifu.ladianbao.util.LoginUtils
 //import com.yifu.lakebao.ui.mine.changepwd.ChangePwdActivity
 //import com.yifu.lakebao.ui.shopenter.shoplogin.ShopLoginActivity
 import com.yifu.ladianbao.util.utilcode.ToastUtils
@@ -42,26 +46,24 @@ class LoginActivity : BaseActivity<LoginContract.Presenter>(), LoginContract.Vie
     }
 
     override fun setListener() {
-        iv_pwd_show_or_hide.setOnClickListener {
-            if (pwdIsShow) {
-                //如果选中，显示密码
-                pwdIsShow = false
-                et_pwd.transformationMethod = HideReturnsTransformationMethod.getInstance()
-                iv_pwd_show_or_hide.setBackgroundResource(R.mipmap.login_but_chak)
-            } else {
-                //否则隐藏密码
-                pwdIsShow = true
-                et_pwd.transformationMethod = PasswordTransformationMethod.getInstance()
-                iv_pwd_show_or_hide.setBackgroundResource(R.mipmap.login_but_chak_n)
-            }
-        }
-        iv_clear_username.setOnClickListener {
-            et_username.text = Editable.Factory.getInstance().newEditable("")
-        }
+       show_hide_password.setOnClickListener {
+           if (pwdIsShow) {
+               //如果选中，显示密码
+               pwdIsShow = false
+               et_pwd.transformationMethod = HideReturnsTransformationMethod.getInstance()
+               show_hide_password.setBackgroundResource(R.mipmap.show)
+           } else {
+               //否则隐藏密码
+               pwdIsShow = true
+               et_pwd.transformationMethod = PasswordTransformationMethod.getInstance()
+               show_hide_password.setBackgroundResource(R.mipmap.unshow2)
+           }
+       }
+
         tv_login.setOnClickListener {
 
-            if (et_username.text.toString().isEmpty()) {
-                ToastUtils.showShort(et_username.hint)
+            if (et_mobile.text.toString().isEmpty()) {
+                ToastUtils.showShort(et_mobile.hint)
                 return@setOnClickListener
             }
             if (et_pwd.text.toString().isEmpty()) {
@@ -69,37 +71,29 @@ class LoginActivity : BaseActivity<LoginContract.Presenter>(), LoginContract.Vie
                 return@setOnClickListener
             }
 
-            mPresenter.login(et_username.text.toString(), et_pwd.text.toString())
+            mPresenter.login(et_mobile.text.toString(), et_pwd.text.toString(),"1")
         }
-//        tv_shop_enter.setOnClickListener {
-//            val intent = Intent(this, ShopLoginActivity::class.java)
-//            startActivity(intent)
-//        }
-//        tv_forget.setOnClickListener {
-//            val intent = Intent(this, ChangePwdActivity::class.java)
-//            startActivity(intent)
-//        }
     }
 
     override fun processLogic() {
-//        if (LoginUtils.isLogin()) {
-//            val intent = Intent(mContext, MainActivity::class.java)
-//            startActivity(intent)
-//            finish()
-//        }
+        if (LoginUtils.isLogin()) {
+            val intent = Intent(mContext, MainActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
     }
 
     override fun onLoginSuccess(bean: UserBean) {
 
-//        LoginUtils.saveToken(bean.token!!)
-//        LoginUtils.saveUserInfo(bean)
-//        val intent = Intent(mContext, MainActivity::class.java)
-//        startActivity(intent)
-//        finish()
+        LoginUtils.saveToken(bean.app_token!!)
+        LoginUtils.saveUserInfo(bean)
+        val intent = Intent(mContext, MainActivity::class.java)
+        startActivity(intent)
+        finish()
     }
 
     override fun onLoginFail(msg: String) {
-
+      Toast.makeText(this,msg,Toast.LENGTH_SHORT).show()
     }
 
 

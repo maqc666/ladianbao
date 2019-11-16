@@ -9,7 +9,8 @@
 
     <string name="app_name">拉店宝</string>
     <string name="main_tab0">首页</string>
-    <string name="main_tab1">订单</string>
+    <string name="main_tab1">商品</string>
+    <string name="main_tab4">商圈</string>
     <string name="main_tab2">消息</string>
-    <string name="main_tab3">我的</string>
+    <string name="main_tab3">设置</string>
 </resources>

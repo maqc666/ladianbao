@@ -11,7 +11,8 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.yifu.ladianbao.R;
-//import com.yifu.ladianbao.ui.MainActivity;
+import com.yifu.ladianbao.ui.MainActivity;
+
 
 public class NativeTabButton extends FrameLayout {
     private int mIndex;
@@ -42,7 +43,7 @@ public class NativeTabButton extends FrameLayout {
 
         this.mContext = context;
 
-//        OnClickListener clickListner = v -> ((MainActivity) mContext).setFragmentShow(mIndex);
+        OnClickListener clickListner = v -> ((MainActivity) mContext).setFragmentShow(mIndex);
 
         LayoutInflater inflater = (LayoutInflater) context
                 .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -52,7 +53,7 @@ public class NativeTabButton extends FrameLayout {
         mImage = (ImageView) findViewById(R.id.tab_btn_default);
         mImageCenter = (ImageView) findViewById(R.id.tab_btn_center);
         mTitle = (TextView) findViewById(R.id.tab_btn_title);
-//        container.setOnClickListener(clickListner);
+        container.setOnClickListener(clickListner);
     }
 
     public void setIndex(int index) {

@@ -11,6 +11,6 @@ class LoginContract {
     }
 
     abstract class Presenter : BasePresent<View>() {
-        abstract fun login(username: String, password: String)
+        abstract fun login(username: String, password: String,type: String)
     }
 }
