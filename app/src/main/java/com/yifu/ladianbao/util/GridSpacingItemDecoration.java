@@ -4,16 +4,7 @@ import android.graphics.Rect;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
-/**
- * Copyright (c) 山东六牛网络科技有限公司 https://liuniukeji.com
- *
- * @Description //
- * @Author // jiangpengcheng; 193601811@qq.com
- * @Copyright Copyright (c) 山东六牛网络科技有限公司 保留所有版权(https://www.liuniukeji.com)
- * @Date // 2019/11/13
- * @CreateBy // android studio 3.4
- * @ModifiedBy //
- */
+
 public class GridSpacingItemDecoration extends RecyclerView.ItemDecoration {
 
     private int spanCount;

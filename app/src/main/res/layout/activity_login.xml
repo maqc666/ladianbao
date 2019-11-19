@@ -21,54 +21,14 @@
     android:layout_width="250dp"
     android:layout_height="90dp"
     android:background="@mipmap/ladianbao"
-    android:layout_marginTop="150dp"/>
-            <LinearLayout
-                android:layout_width="250dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="100dp"
-                android:layout_marginLeft="68dp"
-                android:layout_marginRight="68dp"
-                android:orientation="horizontal">
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:orientation="horizontal"
-                android:gravity="center_vertical">
-                <ImageView
-                    android:layout_width="18dp"
-                    android:layout_height="18dp"
-                    android:background="@mipmap/xuanzhong"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:text="商家登录"
-                    android:textSize="18sp"/>
-            </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:gravity="center_vertical">
-                    <ImageView
-                        android:layout_width="18dp"
-                        android:layout_height="18dp"
-                        android:background="@mipmap/unchoose"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
-                        android:text="员工登录"
-                        android:textSize="18sp"/>
-                </LinearLayout>
-            </LinearLayout>
+    android:layout_marginTop="100dp"/>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="70dp"
                 android:orientation="horizontal"
                 android:background="@color/color_f4"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="70dp"
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp"
                 android:gravity="center_vertical">

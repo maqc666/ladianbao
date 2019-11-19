@@ -9,7 +9,7 @@ import android.content.SharedPreferences;
  * @author
  */
 public class PreferencesUtils {
-    public static String PREFERENCE_NAME = "DaShangWang";
+    public static String PREFERENCE_NAME = "ladianbao";
 
     private PreferencesUtils() {
         throw new AssertionError();

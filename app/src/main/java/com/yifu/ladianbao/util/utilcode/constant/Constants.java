@@ -8,14 +8,7 @@ import com.yifu.ladianbao.R;
 
 import java.io.File;
 
-/**
- * Copyright (c) 山东六牛网络科技有限公司 https://liuniukeji.com
- *
- * @Description
- * @Author 与天同行的观测者
- * @Copyright Copyright (c) 山东六牛网络科技有限公司 保留所有版权(https://www.liuniukeji.com)
- * @Date 2017/12/11 0011 14:19
- */
+
 
 public class Constants {
     public static final String WX_APP_ID = "wx30843d59f81cda6a";
