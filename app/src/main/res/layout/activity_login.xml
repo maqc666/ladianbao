@@ -87,7 +87,7 @@
                 android:layout_marginLeft="45dp"
                 android:layout_marginRight="45dp"
                 android:layout_marginTop="50dp"
-                android:background="@drawable/bg_yuanjiao"
+                android:background="@drawable/bg_yuanjiao_jianbian"
                 android:text="登录"
                 android:textSize="20dp"
                 android:textStyle="bold"

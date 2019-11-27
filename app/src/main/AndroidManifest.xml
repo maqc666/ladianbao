@@ -13,16 +13,20 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ui.systemmanage.syslist.SysListActivity"></activity>
-        <activity android:name=".ui.MainActivity">
-
-            <!-- <intent-filter> -->
-            <!-- <action android:name="android.intent.action.MAIN" /> -->
-
-
-            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-            <!-- </intent-filter> -->
-        </activity>
+        <activity android:name=".ui.finance.business.BusinessActivity"></activity>
+        <activity android:name=".ui.systemmanage.order.sysorder.SysOrderActivty" />
+        <activity android:name=".ui.systemmanage.order.OrderActivity" />
+        <activity android:name=".ui.systemmanage.partner.huaborecord.HuaboRecordActivity" />
+        <activity android:name=".ui.systemmanage.partner.createcharacter.CreaterCharActivity" />
+        <activity android:name=".ui.systemmanage.partner.parnerdetail.huabo.HuaboActivity" />
+        <activity android:name=".ui.systemmanage.partner.parnerdetail.xiugai.ModifyActivity" />
+        <activity android:name=".ui.systemmanage.partner.parnerdetail.PartnerDetailActivity" /> <!-- 合伙人详情 -->
+        <activity android:name=".ui.systemmanage.partner.PartnerActivity" /> <!-- 合伙人管理页面 -->
+        <activity android:name=".ui.systemmanage.syslist.all.detail.DetailActivity" />
+        <activity
+            android:name=".ui.systemmanage.syslist.SysListActivity"
+            android:windowSoftInputMode="stateHidden" /> <!-- 系统列表 -->
+        <activity android:name=".ui.MainActivity" /> <!-- 主页面 -->
         <activity
             android:name=".ui.login.LoginActivity"
             android:windowSoftInputMode="stateAlwaysHidden|stateHidden">

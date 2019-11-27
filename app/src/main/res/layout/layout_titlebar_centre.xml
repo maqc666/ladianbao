@@ -9,7 +9,7 @@
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="45dp"
+        android:layout_height="43dp"
         android:background="@color/white">
 
         <ImageView
@@ -38,4 +38,5 @@
              android:src="@mipmap/search_white" />-->
 
     </android.support.v7.widget.Toolbar>
+
 </LinearLayout>
