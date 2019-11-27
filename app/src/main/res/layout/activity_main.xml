@@ -419,6 +419,7 @@
                         android:text="交易分润"/>
                 </LinearLayout>
                 <LinearLayout
+                    android:id="@+id/ll_shangquan"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -433,9 +434,10 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         android:textSize="10sp"
-                        android:text="店铺列表"/>
+                        android:text="商圈收益"/>
                 </LinearLayout>
                 <LinearLayout
+                    android:id="@+id/ll_vip"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -450,7 +452,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         android:textSize="10sp"
-                        android:text="店铺列表"/>
+                        android:text="至尊卡收益"/>
                 </LinearLayout>
 
                 <LinearLayout

@@ -8,6 +8,8 @@ import android.view.KeyEvent
 import com.yifu.ladianbao.R
 import com.yifu.ladianbao.base.BaseKActivity
 import com.yifu.ladianbao.ui.finance.business.BusinessActivity
+import com.yifu.ladianbao.ui.finance.shangquan.ShangQuanActivity
+import com.yifu.ladianbao.ui.finance.vip.VIPActivity
 import com.yifu.ladianbao.ui.systemmanage.order.OrderActivity
 import com.yifu.ladianbao.ui.systemmanage.partner.PartnerActivity
 import com.yifu.ladianbao.ui.systemmanage.syslist.SysListActivity
@@ -41,7 +43,12 @@ class MainActivity : BaseKActivity() {
         ll_business.setOnClickListener {
             this.startActivity<BusinessActivity>()
         }
-
+        ll_shangquan.setOnClickListener {
+            this.startActivity<ShangQuanActivity>()
+        }
+        ll_vip.setOnClickListener {
+            this.startActivity<VIPActivity>()
+        }
         }
 
     override fun initData() {

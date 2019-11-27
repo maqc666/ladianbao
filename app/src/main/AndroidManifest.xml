@@ -13,7 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ui.finance.business.BusinessActivity"></activity>
+        <activity android:name=".ui.finance.vip.VIPActivity"></activity>
+        <activity android:name=".ui.finance.shangquan.ShangQuanActivity" />
+        <activity android:name=".ui.finance.business.BusinessActivity" />
         <activity android:name=".ui.systemmanage.order.sysorder.SysOrderActivty" />
         <activity android:name=".ui.systemmanage.order.OrderActivity" />
         <activity android:name=".ui.systemmanage.partner.huaborecord.HuaboRecordActivity" />

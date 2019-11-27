@@ -7,6 +7,13 @@
     android:orientation="vertical"
     tools:context="com.yifu.ladianbao.ui.finance.business.BusinessActivity">
     <include layout="@layout/layout_titlebar_centre"/>
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="180dp"
@@ -64,4 +71,65 @@
             android:textSize="10sp"/>
     </LinearLayout>
 </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:orientation="vertical"
+        android:background="@drawable/shadow_around">
+
+        <LinearLayout
+            android:id="@+id/ll_title"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:visibility="gone"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:text="收入记录"/>
+
+            </LinearLayout>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="20dp"
+                android:background="@color/color_f4"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:text="提现记录"/>
+
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_f4"/>
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rv_business"/>
+    </LinearLayout>
+    </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
 </LinearLayout>
