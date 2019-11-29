@@ -11,16 +11,11 @@ import com.yifu.ladianbao.MessageAdapter
 import com.yifu.ladianbao.R
 import com.yifu.ladianbao.base.BaseKActivity
 import com.yifu.ladianbao.ui.CustomFragmentPagerAdapter
-import com.yifu.ladianbao.ui.systemmanage.syslist.all.AllFragment
+import com.yifu.ladianbao.ui.work.popularize.fragment.AllFragment
+
 import kotlinx.android.synthetic.main.activity_popular.*
 import kotlinx.android.synthetic.main.layout_titlebar_centre.*
-import net.lucode.hackware.magicindicator.ViewPagerHelper
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.CommonNavigator
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.abs.CommonNavigatorAdapter
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.abs.IPagerIndicator
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.abs.IPagerTitleView
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.indicators.LinePagerIndicator
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.titles.CommonPagerTitleView
+
 
 class PopularActivity : BaseKActivity() {
 
