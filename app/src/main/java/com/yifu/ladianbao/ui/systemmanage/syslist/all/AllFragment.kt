@@ -2,6 +2,7 @@ package com.yifu.ladianbao.ui.systemmanage.syslist.all
 
 
 import android.content.Intent
+import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
 import android.view.View
 import com.chad.library.adapter.base.BaseQuickAdapter
@@ -84,4 +85,14 @@ class AllFragment : BaseKFragment(),AllContact.View {
     val mPresenter by lazy { AllPresenter(context!!) }
     var typeId = 0
     var index = 1
+
+    companion object {
+        fun getInstance(tab: Int): AllFragment {
+            val fragment = AllFragment()
+            val args = Bundle()
+            args.putInt("tab", tab)
+            fragment.arguments = args
+            return fragment
+        }
+    }
 }

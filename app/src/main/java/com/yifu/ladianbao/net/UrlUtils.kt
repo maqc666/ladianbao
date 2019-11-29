@@ -20,6 +20,7 @@ object UrlUtils {
      */
     //登录
     val login: String = api_http + "login/login"
+    val logout: String = api_http + "logout/logout"
 
 
 

@@ -13,7 +13,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ui.finance.vip.VIPActivity"></activity>
+        <activity android:name=".ui.post_sale.new_policy.PolicyActivity"></activity>
+        <activity android:name=".ui.logout.LogoutActivity" />
+        <activity android:name=".ui.work.popularize.PopularActivity" />
+        <activity android:name=".ui.post_sale.help.HelpActivity" />
+        <activity android:name=".ui.post_sale.setting.SettingActivity" />
+        <activity android:name=".ui.finance.vip.VIPActivity" />
         <activity android:name=".ui.finance.shangquan.ShangQuanActivity" />
         <activity android:name=".ui.finance.business.BusinessActivity" />
         <activity android:name=".ui.systemmanage.order.sysorder.SysOrderActivty" />

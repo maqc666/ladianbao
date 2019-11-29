@@ -74,6 +74,7 @@ class SysListActivity : BaseKActivity() {
 //                bundle.putString("typeId", mTitleDataList[i].cate_id)
         adapter= MessageAdapter(supportFragmentManager,mFragments,titleArray)
         viewPager.adapter=adapter
+        viewPager.setNoScroll(true)
         viewPager.offscreenPageLimit=titleArray.size
         viewPager.setOnPageChangeListener(object : ViewPager.OnPageChangeListener{
             override fun onPageScrollStateChanged(state: Int) {

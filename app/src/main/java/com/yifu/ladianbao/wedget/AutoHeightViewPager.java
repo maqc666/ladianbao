@@ -3,9 +3,11 @@ package com.yifu.ladianbao.wedget;
 import android.content.Context;
 import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
+import android.view.MotionEvent;
 import android.view.View;
 
 public class AutoHeightViewPager extends ViewPager {
+    private boolean noScroll = false;
 
     public AutoHeightViewPager(Context context, AttributeSet attrs) {
         super(context, attrs);
@@ -71,5 +73,25 @@ public class AutoHeightViewPager extends ViewPager {
         // 获取测量后的view尺寸
         int intwidth = view.getMeasuredWidth();
         int intheight = view.getMeasuredHeight();
+    }
+
+    public void setNoScroll(boolean noScroll){
+        this.noScroll=noScroll;
+    }
+
+    /**
+     * 设置滑动
+     *
+     * @param arg0
+     */
+
+    @Override
+    public boolean onTouchEvent(MotionEvent arg0) {
+        return !noScroll && super.onTouchEvent(arg0);
+    }
+
+    @Override
+    public boolean onInterceptTouchEvent(MotionEvent arg0) {
+        return !noScroll && super.onInterceptTouchEvent(arg0);
     }
 }
