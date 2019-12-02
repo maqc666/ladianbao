@@ -118,7 +118,7 @@ abstract class JsonCallback<T>(context: Context, canShow: Boolean = false, messa
             } else {
                 val code = JSON.parseObject(mResponse).getInteger("code")
                 val data = JSON.parseObject(mResponse).getString("data")
-                val msg = JSON.parseObject(mResponse).getString("msg")
+                val message = JSON.parseObject(mResponse).getString("message")
                 when {
 //                    code == 1 -> return if (result == "[]" || result == "{}" || TextUtils.isEmpty(result)){
 //                        val simpleResponse = Convert.fromJson(mResponse, SimpleResponse::class.java)

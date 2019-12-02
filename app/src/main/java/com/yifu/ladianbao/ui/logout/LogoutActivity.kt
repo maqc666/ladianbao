@@ -37,7 +37,10 @@ class LogoutActivity :  BaseKActivity(), LogoutContract.View {
             finish()
         }
         tv_logout.setOnClickListener {
-            mPresenter.Logout(LoginUtils.getToken())
+            LoginUtils.logout()
+            this.startActivity<LoginActivity>()
+            finish()
+            //mPresenter.Logout(LoginUtils.getToken())
         } }
 
     override fun initData() {

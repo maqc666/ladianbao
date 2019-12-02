@@ -10,7 +10,7 @@ object UrlUtils {
     // private const val domain = ""//正式地址
 
     //地址名加 api/
-    public const val api_http = "http://ldb.yiqifuo.com/bapi/v1."//正式地址
+    public const val api_http = "http://ldb.yiqifuo.com/api/agent."//正式地址
 
     /**
      * 接口名

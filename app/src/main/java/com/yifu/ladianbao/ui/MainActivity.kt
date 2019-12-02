@@ -25,6 +25,8 @@ import org.jetbrains.anko.startActivity
 
 
 class MainActivity : BaseKActivity() {
+
+
     override fun layoutId(): Int {
         return R.layout.activity_main
     }

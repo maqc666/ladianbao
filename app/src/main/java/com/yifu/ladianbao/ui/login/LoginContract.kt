@@ -8,9 +8,12 @@ class LoginContract {
     interface View : BaseView {
         fun onLoginSuccess(bean: UserBean)
         fun onLoginFail(msg: String)
+        fun onIndexSuccess(bean: UserBean)
+        fun onIndexFail(msg: String)
     }
 
     abstract class Presenter : BasePresent<View>() {
-        abstract fun login(username: String, password: String,type: String)
+        abstract fun login(username: String, password: String)
+        abstract fun index(token: String,username: String, password: String)
     }
 }

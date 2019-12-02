@@ -20,6 +20,18 @@ import kotlinx.android.synthetic.main.activity_login.*
 import java.lang.reflect.Method
 
 class LoginActivity : BaseActivity<LoginContract.Presenter>(), LoginContract.View {
+    override fun onIndexSuccess(bean: UserBean) {
+        LoginUtils.saveToken(bean.token!!)
+        LoginUtils.saveUserInfo(bean)
+        val intent = Intent(mContext, MainActivity::class.java)
+        startActivity(intent)
+        finish()
+
+    }
+
+    override fun onIndexFail(msg: String) {
+        }
+
     override fun getContext(): Context {
         return mContext
     }
@@ -62,6 +74,8 @@ class LoginActivity : BaseActivity<LoginContract.Presenter>(), LoginContract.Vie
 
         tv_login.setOnClickListener {
 
+
+
             if (et_mobile.text.toString().isEmpty()) {
                 ToastUtils.showShort(et_mobile.hint)
                 return@setOnClickListener
@@ -71,7 +85,7 @@ class LoginActivity : BaseActivity<LoginContract.Presenter>(), LoginContract.Vie
                 return@setOnClickListener
             }
 
-            mPresenter.login(et_mobile.text.toString(), et_pwd.text.toString(),"1")
+            mPresenter.login(et_mobile.text.toString(), et_pwd.text.toString())
         }
     }
 
@@ -85,15 +99,11 @@ class LoginActivity : BaseActivity<LoginContract.Presenter>(), LoginContract.Vie
 
     override fun onLoginSuccess(bean: UserBean) {
 
-        LoginUtils.saveToken(bean.app_token!!)
-        LoginUtils.saveUserInfo(bean)
-        val intent = Intent(mContext, MainActivity::class.java)
-        startActivity(intent)
-        finish()
+       onIndexSuccess(bean)
     }
 
     override fun onLoginFail(msg: String) {
-      Toast.makeText(this,msg,Toast.LENGTH_SHORT).show()
+      showToast(msg)
     }
 
 
@@ -111,8 +121,5 @@ class LoginActivity : BaseActivity<LoginContract.Presenter>(), LoginContract.Vie
             method.invoke(et, false)
         } catch (e: Exception) {//TODO: handle exception
         }
-
     }
-
-
 }

@@ -13,5 +13,5 @@ class UserBean : Serializable {
     var mobile: String?=null
     var password: String?=null
     //var type: String?=null
-    var app_token: String?=null
+    var token: String?=null
 }
