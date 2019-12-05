@@ -21,6 +21,7 @@ import java.lang.reflect.Method
 
 class LoginActivity : BaseActivity<LoginContract.Presenter>(), LoginContract.View {
     override fun onIndexSuccess(bean: UserBean) {
+
         LoginUtils.saveToken(bean.token!!)
         LoginUtils.saveUserInfo(bean)
         val intent = Intent(mContext, MainActivity::class.java)
@@ -122,4 +123,6 @@ class LoginActivity : BaseActivity<LoginContract.Presenter>(), LoginContract.Vie
         } catch (e: Exception) {//TODO: handle exception
         }
     }
+
+
 }

@@ -19,7 +19,11 @@ object UrlUtils {
      * 我的
      */
     //登录
+
     val login: String = api_http + "login/login"
+    val circleExtension: String = api_http + "agent/circleExtension"
+
+
     val logout: String = api_http + "logout/logout"
 
 

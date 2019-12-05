@@ -11,13 +11,16 @@
         android:layout_width="match_parent"
         android:layout_height="43dp"
         android:background="@color/white">
-
+<LinearLayout
+    android:id="@+id/image_back"
+    android:layout_width="40dp"
+    android:layout_height="match_parent">
         <ImageView
-            android:id="@+id/image_back"
             android:layout_width="22dp"
             android:layout_height="match_parent"
             android:src="@mipmap/but_back"
             android:visibility="visible"/>
+</LinearLayout>
 
         <TextView
             android:id="@+id/tv_title"

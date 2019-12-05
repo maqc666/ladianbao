@@ -1,9 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.yifu.ladianbao.ui.finance.vip.VIPActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
 
-</android.support.constraint.ConstraintLayout>
+        android:gravity="center_vertical">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:background="@color/color_183">
+
+            <LinearLayout
+                android:id="@+id/image_back"
+                android:layout_width="50dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:src="@mipmap/but_back"
+                    android:visibility="visible"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="用户 :  "
+                android:layout_gravity="center"
+                android:textColor="@color/color_6688"
+                android:textSize="17sp" />
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text=""
+                android:layout_gravity="center"
+                android:textColor="@color/color_6688"
+                android:textSize="17sp" />
+
+            <!-- <ImageView
+                 android:id="@+id/image_right"
+                 android:layout_width="20dp"
+                 android:layout_height="20dp"
+                 android:layout_gravity="right"
+                 android:layout_marginRight="15dp"
+                 android:src="@mipmap/search_white" />-->
+
+        </android.support.v7.widget.Toolbar>
+
+    </LinearLayout>
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/wv_vip"/>
+
+</LinearLayout>

@@ -14,4 +14,5 @@ class UserBean : Serializable {
     var password: String?=null
     //var type: String?=null
     var token: String?=null
+    var agent_id: String?=null
 }

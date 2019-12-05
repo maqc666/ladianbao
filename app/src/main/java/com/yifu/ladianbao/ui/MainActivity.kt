@@ -11,12 +11,16 @@ import com.yifu.ladianbao.ui.finance.business.BusinessActivity
 import com.yifu.ladianbao.ui.finance.shangquan.ShangQuanActivity
 import com.yifu.ladianbao.ui.finance.vip.VIPActivity
 import com.yifu.ladianbao.ui.logout.LogoutActivity
+import com.yifu.ladianbao.ui.post_sale.caigou.LineOrderActivity
+import com.yifu.ladianbao.ui.post_sale.help.HelpActivity
 import com.yifu.ladianbao.ui.post_sale.new_policy.PolicyActivity
 import com.yifu.ladianbao.ui.post_sale.setting.SettingActivity
 import com.yifu.ladianbao.ui.systemmanage.order.OrderActivity
 import com.yifu.ladianbao.ui.systemmanage.partner.PartnerActivity
 import com.yifu.ladianbao.ui.systemmanage.syslist.SysListActivity
 import com.yifu.ladianbao.ui.work.popularize.PopularActivity
+import com.yifu.ladianbao.ui.work.popularize.VIP.VIPPupActivity
+import com.yifu.ladianbao.ui.work.popularize.businesspup.BusinessPupActivity
 
 import com.yifu.ladianbao.util.utilcode.ToastUtils
 import kotlinx.android.synthetic.main.activity_main.*
@@ -68,6 +72,18 @@ class MainActivity : BaseKActivity() {
         }
         ll_policy.setOnClickListener {
             this.startActivity<PolicyActivity>()
+        }
+        ll_help.setOnClickListener {
+            this.startActivity<HelpActivity>()
+        }
+        ll_sys_order.setOnClickListener {
+            this.startActivity<LineOrderActivity>()
+        }
+        ll_vip_pup.setOnClickListener {
+            this.startActivity<VIPPupActivity>()
+        }
+        ll_business_pup.setOnClickListener {
+            this.startActivity<BusinessPupActivity>()
         }
         }
 

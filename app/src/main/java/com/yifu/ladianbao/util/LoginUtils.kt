@@ -3,11 +3,26 @@ package com.yifu.ladianbao.util
 import android.text.TextUtils
 import com.google.gson.Gson
 import com.yifu.ladianbao.ui.login.UserBean
+import com.yifu.ladianbao.ui.work.popularize.businesspup.CircleBean
 import com.yifu.ladianbao.util.utilcode.Utils
 
 
 
 object LoginUtils {
+
+    fun getCircleBean(): CircleBean? {
+        val json = PreferencesUtils.getString(Utils.getApp(), "circleinfo", "")
+        return if (TextUtils.isEmpty(json)) null else (Gson().fromJson(json, CircleBean::class.java))
+    }
+
+    fun saveCircleBean(circleBean: CircleBean){
+        if(circleBean!=null){
+            val json = Gson().toJson(circleBean)
+            PreferencesUtils.putString(Utils.getApp(), "circleinfo", json)
+        }else{
+            PreferencesUtils.putString(Utils.getApp(), "circleinfo", "")
+        }
+    }
 
     /**
      * 返回用户信息

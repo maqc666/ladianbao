@@ -29,18 +29,17 @@
                     android:layout_height="70dp"
                     android:layout_marginLeft="15dp"
                     android:orientation="vertical"
-                    android:gravity="center_vertical"
-                    >
+                    android:gravity="center_vertical">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="临沂市总代理"
-                            android:textSize="16sp"
-                            android:textColor="@color/black"/>
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:text="临沂市总代理"-->
+<!--                            android:textSize="16sp"-->
+<!--                            android:textColor="@color/black"/>-->
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -286,15 +285,6 @@
                     android:layout_weight="1"
                     android:orientation="vertical"
                     android:gravity="center">
-
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:orientation="vertical"
-                    android:gravity="center">
-
                 </LinearLayout>
             </LinearLayout>
             <TextView
@@ -314,6 +304,7 @@
                 android:gravity="center_vertical">
 
                 <LinearLayout
+                    android:id="@+id/ll_vip_pup"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -331,6 +322,7 @@
                         android:text="店铺列表"/>
                 </LinearLayout>
                 <LinearLayout
+                    android:id="@+id/ll_business_pup"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -345,7 +337,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         android:textSize="10sp"
-                        android:text="店铺列表"/>
+                        android:text="商圈推广"/>
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -528,6 +520,7 @@
                         android:text="设置中心"/>
                 </LinearLayout>
                 <LinearLayout
+                    android:id="@+id/ll_help"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -542,15 +535,25 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         android:textSize="10sp"
-                        android:text="店铺列表"/>
+                        android:text="帮助中心"/>
                 </LinearLayout>
                 <LinearLayout
+                    android:id="@+id/ll_sys_order"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:orientation="vertical"
                     android:gravity="center">
-
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@mipmap/goods_gray"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textSize="10sp"
+                        android:text="系统采购"/>
                 </LinearLayout>
 
             </LinearLayout>

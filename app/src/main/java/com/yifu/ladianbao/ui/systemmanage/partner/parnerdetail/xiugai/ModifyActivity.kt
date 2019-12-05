@@ -1,14 +1,12 @@
 package com.yifu.ladianbao.ui.systemmanage.partner.parnerdetail.xiugai
 
-import android.support.v7.app.AppCompatActivity
-import android.os.Bundle
+
 import android.view.View
 import android.widget.TextView
 import com.bigkoo.pickerview.builder.OptionsPickerBuilder
 import com.bigkoo.pickerview.listener.OnOptionsSelectListener
 import com.bigkoo.pickerview.view.OptionsPickerView
 import com.yifu.ladianbao.R
-import com.yifu.ladianbao.base.BaseActivity
 import com.yifu.ladianbao.base.BaseKActivity
 import kotlinx.android.synthetic.main.activity_modify.*
 import kotlinx.android.synthetic.main.layout_titlebar_centre.*

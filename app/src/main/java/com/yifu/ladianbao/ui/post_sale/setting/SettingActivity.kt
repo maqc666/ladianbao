@@ -88,6 +88,6 @@ class SettingActivity : BaseKActivity() {
         cardItem.add("中国农业银行")
         cardItem.add("临商银行")
         cardItem.add("山东农信")
-
-}}
+}
+}
 
