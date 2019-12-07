@@ -22,9 +22,14 @@ object UrlUtils {
 
     val login: String = api_http + "login/login"
     val circleExtension: String = api_http + "agent/circleExtension"
+    val myWallet : String = api_http + "agent/myWallet"
+    val circleReward : String = api_http + "agent/circleReward"
+    val supremeReward : String = api_http + "agent/supremeReward"
 
 
-    val logout: String = api_http + "logout/logout"
+
+
+    val logout: String = api_http + "agent/loginOut"
 
 
 

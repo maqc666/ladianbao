@@ -7,6 +7,15 @@
     android:orientation="vertical"
     tools:context="com.yifu.ladianbao.ui.finance.business.BusinessActivity">
     <include layout="@layout/layout_titlebar_centre"/>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <com.scwang.smartrefresh.header.MaterialHeader
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
     <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -31,6 +40,7 @@
         android:layout_marginTop="20dp"
         android:textSize="10sp"/>
     <TextView
+        android:id="@+id/tv_money"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="13.23"
@@ -51,6 +61,7 @@
             android:textColor="@color/white"
             android:textSize="10sp"/>
         <TextView
+            android:id="@+id/tv_yesterday"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -64,6 +75,7 @@
             android:textColor="@color/white"
             android:textSize="10sp"/>
         <TextView
+            android:id="@+id/tv_commission"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="13.2306"
@@ -89,12 +101,14 @@
             android:visibility="gone"
             >
             <LinearLayout
+                android:id="@+id/ll_income"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:orientation="horizontal"
                 android:gravity="center">
                 <TextView
+                    android:id="@+id/tv_income"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="14sp"
@@ -107,12 +121,14 @@
                 android:layout_height="20dp"
                 android:background="@color/color_f4"/>
             <LinearLayout
+                android:id="@+id/ll_cash"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:orientation="horizontal"
                 android:gravity="center">
                 <TextView
+                    android:id="@+id/tv_cash"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="14sp"
@@ -128,8 +144,31 @@
         <android.support.v7.widget.RecyclerView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
             android:id="@+id/rv_business"/>
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone"
+            android:id="@+id/rv_cash"/>
+        <LinearLayout
+            android:id="@+id/ll_empty"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="暂无数据 ! "
+                android:textColor="@color/color_33"
+                android:textSize="20dp"/>
+        </LinearLayout>
     </LinearLayout>
+
     </LinearLayout>
     </android.support.v4.widget.NestedScrollView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
 </LinearLayout>

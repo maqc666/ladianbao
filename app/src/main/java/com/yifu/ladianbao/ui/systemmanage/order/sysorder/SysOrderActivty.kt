@@ -1,7 +1,5 @@
 package com.yifu.ladianbao.ui.systemmanage.order.sysorder
 
-import android.support.v7.app.AppCompatActivity
-import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
 import com.yifu.ladianbao.R
 import com.yifu.ladianbao.base.BaseKActivity

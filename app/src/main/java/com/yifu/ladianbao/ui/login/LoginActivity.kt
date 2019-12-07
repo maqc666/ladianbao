@@ -31,6 +31,7 @@ class LoginActivity : BaseActivity<LoginContract.Presenter>(), LoginContract.Vie
     }
 
     override fun onIndexFail(msg: String) {
+        showToast(msg)
         }
 
     override fun getContext(): Context {

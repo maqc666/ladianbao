@@ -7,10 +7,8 @@ import com.yifu.ladianbao.ui.systemmanage.partner.createcharacter.CreaterCharAct
 import com.yifu.ladianbao.ui.systemmanage.partner.huaborecord.HuaboRecordActivity
 import com.yifu.ladianbao.ui.systemmanage.partner.parnerdetail.PartnerDetailActivity
 import kotlinx.android.synthetic.main.activity_partner.*
-import kotlinx.android.synthetic.main.item_partner_content.*
 import kotlinx.android.synthetic.main.layout_titlebar_centre.*
 import org.jetbrains.anko.startActivity
-import kotlin.jvm.java as java1
 
 class PartnerActivity : BaseKActivity(),PartnerContract.View {
     override fun onDataSuccess(list: List<PartnerBean>) {

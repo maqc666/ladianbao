@@ -10,18 +10,12 @@ import com.yifu.ladianbao.util.utilcode.Utils
 
 object LoginUtils {
 
-    fun getCircleBean(): CircleBean? {
-        val json = PreferencesUtils.getString(Utils.getApp(), "circleinfo", "")
-        return if (TextUtils.isEmpty(json)) null else (Gson().fromJson(json, CircleBean::class.java))
+    fun getBackground(): String? {
+        return PreferencesUtils.getString(Utils.getApp(), "background", "")
     }
 
-    fun saveCircleBean(circleBean: CircleBean){
-        if(circleBean!=null){
-            val json = Gson().toJson(circleBean)
-            PreferencesUtils.putString(Utils.getApp(), "circleinfo", json)
-        }else{
-            PreferencesUtils.putString(Utils.getApp(), "circleinfo", "")
-        }
+    fun saveBackground(background: String){
+        PreferencesUtils.putString(Utils.getApp(), "background", background)
     }
 
     /**

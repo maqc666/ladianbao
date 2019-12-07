@@ -7,7 +7,7 @@ import com.yifu.ladianbao.ui.login.UserBean
 interface LogoutContract {
 
     interface View : IBaseView {
-        fun onLogoutSuccess(bean: LogoutBean)
+        fun onLogoutSuccess(msg: String)
         fun onLogoutFail(msg: String)
     }
 

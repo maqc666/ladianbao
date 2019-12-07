@@ -7,7 +7,6 @@ import com.yifu.ladianbao.base.BaseKPresenter
 import com.yifu.ladianbao.net.BaseResponse
 import com.yifu.ladianbao.net.JsonCallback
 import com.yifu.ladianbao.net.UrlUtils
-import com.yifu.ladianbao.ui.login.UserBean
 
 class BusinessPupPresenter(context: Context)  : BaseKPresenter<BusinessPupContract.View>(context), BusinessPupContract.Persenter {
     override fun getDataList(token: String) {

@@ -14,13 +14,13 @@ import com.yifu.ladianbao.util.LoginUtils
 class LogoutPresenter (context: Context)  : BaseKPresenter<LogoutContract.View>(context), LogoutContract.Presenter {
 
 
-    override fun Logout(app_token: String) {
+    override fun Logout(token: String) {
         OkGo.post<BaseResponse<LogoutBean>>(UrlUtils.logout)
                 .tag(mRootView)
-                .params("app_token",app_token)
+                .headers("token",token)
                 .execute(object : JsonCallback<BaseResponse<LogoutBean>>(mContext!!, true) {
                     override fun onSuccess(success: BaseResponse<LogoutBean>?) {
-                        success?.data?.let { mRootView?.onLogoutSuccess(it) }
+                        success?.msg?.let { mRootView?.onLogoutSuccess(it) }
                     }
 
                     override fun onError(response: Response<BaseResponse<LogoutBean>>?) {

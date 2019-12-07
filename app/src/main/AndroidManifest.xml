@@ -17,7 +17,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ui.work.popularize.businesspup.BusinessPupActivity"></activity>
+        <activity android:name=".ui.index.IndexActivity"></activity>
+        <activity android:name=".ui.work.popularize.businesspup.BusinessPupActivity" />
         <activity android:name=".ui.work.popularize.VIP.VIPPupActivity" />
         <activity android:name=".ui.post_sale.caigou.pay.PayActivity" />
         <activity android:name=".ui.post_sale.caigou.LineOrderActivity" />
