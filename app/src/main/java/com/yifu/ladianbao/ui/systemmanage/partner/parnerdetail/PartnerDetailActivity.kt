@@ -1,7 +1,5 @@
 package com.yifu.ladianbao.ui.systemmanage.partner.parnerdetail
 
-import android.support.v7.app.AppCompatActivity
-import android.os.Bundle
 import android.view.View
 import android.widget.TextView
 import com.bigkoo.pickerview.builder.OptionsPickerBuilder
@@ -9,7 +7,7 @@ import com.bigkoo.pickerview.listener.OnOptionsSelectListener
 import com.bigkoo.pickerview.view.OptionsPickerView
 import com.yifu.ladianbao.R
 import com.yifu.ladianbao.base.BaseKActivity
-import com.yifu.ladianbao.ui.systemmanage.partner.parnerdetail.xiugai.ModifyActivity
+import com.yifu.ladianbao.ui.systemmanage.partner.parnerdetail.xiugai.MotifyActivity
 import kotlinx.android.synthetic.main.activity_parner_detail.*
 import kotlinx.android.synthetic.main.layout_titlebar_centre.*
 import org.jetbrains.anko.startActivity
@@ -31,7 +29,7 @@ class PartnerDetailActivity : BaseKActivity() {
 
         }
         tv_xiugai.setOnClickListener{
-            this.startActivity<ModifyActivity>()
+            this.startActivity<MotifyActivity>()
         }
 
         initHuaboOptionPicker()

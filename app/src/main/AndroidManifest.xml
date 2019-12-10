@@ -5,8 +5,29 @@
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.INTERNET" />
+
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- 可选 -->
+    <uses-permission
+        android:name="android.permission.READ_LOGS"
+        tools:ignore="ProtectedPermissions" />
+
 
     <application
         android:name=".App"
@@ -38,7 +59,7 @@
         <activity android:name=".ui.systemmanage.partner.huaborecord.HuaboRecordActivity" />
         <activity android:name=".ui.systemmanage.partner.createcharacter.CreaterCharActivity" />
         <activity android:name=".ui.systemmanage.partner.parnerdetail.huabo.HuaboActivity" />
-        <activity android:name=".ui.systemmanage.partner.parnerdetail.xiugai.ModifyActivity" />
+        <activity android:name=".ui.systemmanage.partner.parnerdetail.xiugai.MotifyActivity" />
         <activity android:name=".ui.systemmanage.partner.parnerdetail.PartnerDetailActivity" /> <!-- 合伙人详情 -->
         <activity android:name=".ui.systemmanage.partner.PartnerActivity" /> <!-- 合伙人管理页面 -->
         <activity android:name=".ui.systemmanage.syslist.all.detail.DetailActivity" />

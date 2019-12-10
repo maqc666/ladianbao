@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.yifu.ladianbao.ui.systemmanage.partner.parnerdetail.xiugai.ModifyActivity">
+    tools:context="com.yifu.ladianbao.ui.systemmanage.partner.parnerdetail.xiugai.MotifyActivity">
 <include layout="@layout/layout_titlebar_centre"/>
 <android.support.v4.widget.NestedScrollView
     android:layout_width="match_parent"

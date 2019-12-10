@@ -12,7 +12,7 @@ import kotlinx.android.synthetic.main.activity_modify.*
 import kotlinx.android.synthetic.main.layout_titlebar_centre.*
 import java.util.ArrayList
 
-class ModifyActivity : BaseKActivity() {
+class MotifyActivity : BaseKActivity() {
 
     private var pvCustomOptions: OptionsPickerView<String>? = null
     private val cardItem = ArrayList<String>()

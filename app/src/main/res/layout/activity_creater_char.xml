@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.yifu.ladianbao.ui.systemmanage.partner.parnerdetail.xiugai.ModifyActivity">
+    tools:context="com.yifu.ladianbao.ui.systemmanage.partner.parnerdetail.xiugai.MotifyActivity">
     <include layout="@layout/layout_titlebar_centre"/>
     <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
@@ -472,6 +472,34 @@
                     android:textColor="@color/black"/>
 
             </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:layout_margin="15dp">
+                <ImageView
+                    android:id="@+id/zhengmian"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:background="@color/color_c5"
+                   />
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    />
+                <ImageView
+                    android:id="@+id/beimian"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:background="@color/color_c5"
+                    />
+
+            </LinearLayout>
+
 
             <LinearLayout
                 android:layout_width="match_parent"
