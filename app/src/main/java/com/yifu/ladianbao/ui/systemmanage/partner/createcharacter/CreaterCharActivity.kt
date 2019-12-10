@@ -38,7 +38,7 @@ var state=1
     }
 
     override fun initView() {
-        var state=1
+
         tv_title.text = "增加合伙人"
         image_back.setOnClickListener {
             finish()
