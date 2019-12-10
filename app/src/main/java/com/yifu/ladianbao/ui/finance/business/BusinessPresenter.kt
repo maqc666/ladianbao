@@ -25,40 +25,7 @@ class BusinessPresenter (context: Context)  : BaseKPresenter<BusinessContract.Vi
                 })
     }
 
-    override fun getIncomeList(token: String,p: Int) {
-        OkGo.post<BaseResponse<BusinessListBean>>(UrlUtils.myWallet)
-                .tag(mRootView)
-                .headers("token", token)
-                .params("type",2)
-                .params("page",p)
-                .execute(object : JsonCallback<BaseResponse<BusinessListBean>>(mContext, true) {
-                    override fun onSuccess(success: BaseResponse<BusinessListBean>?) {
-                        success?.data?.let { mRootView?.onDataSuccess(it) }
-                    }
 
-                    override fun onError(response: Response<BaseResponse<BusinessListBean>>?) {
-                        super.onError(response)
-                        mRootView?.onDataFail(response?.exception?.message.toString())
-                    }
-                })
     }
 
 
-    override fun getCashList(token: String,p: Int) {
-
-        OkGo.post<BaseResponse<BusinessListBean>>(UrlUtils.myWallet)
-                .tag(mRootView)
-                .headers("token", token)
-                .params("type",1)
-                .params("page",p)
-                .execute(object : JsonCallback<BaseResponse<BusinessListBean>>(mContext!!, true) {
-                    override fun onSuccess(success: BaseResponse<BusinessListBean>?) {
-                        success?.data?.let { mRootView?.onCashSuccess(it) }
-                    }
-
-                    override fun onError(response: Response<BaseResponse<BusinessListBean>>?) {
-                        super.onError(response)
-                        mRootView?.onDataFail(response?.exception?.message.toString())
-                    }
-                })
-}}

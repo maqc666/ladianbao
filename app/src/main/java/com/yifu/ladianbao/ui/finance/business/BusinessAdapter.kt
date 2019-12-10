@@ -6,7 +6,9 @@ import com.chad.library.adapter.base.BaseViewHolder
 import com.yifu.ladianbao.R
 
 class BusinessAdapter : BaseQuickAdapter<BusinessListBean.DataBean, BaseViewHolder>(R.layout.item_business) {
+
     override fun convert(helper: BaseViewHolder, item: BusinessListBean.DataBean?) {
+
 
        var time= helper.getView<TextView>(R.id.tv_time)
         time.text=item?.create_time

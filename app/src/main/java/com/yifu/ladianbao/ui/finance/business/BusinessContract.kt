@@ -7,15 +7,13 @@ import com.yifu.ladianbao.ui.systemmanage.partner.PartnerBean
 interface BusinessContract {
 
     interface View : IBaseView {
-        fun onDataSuccess(bean: BusinessListBean)
-        fun onCashSuccess(bean: BusinessListBean)
+
         fun onSuccess(bean: BusinessBean)
         fun onDataFail(msg:String)
     }
     interface Persenter: IPresenter<View> {
         fun getDataList(token: String)
-        fun getCashList(token: String,p: Int)
-        fun getIncomeList(token: String,p: Int)
+
 
     }
 }

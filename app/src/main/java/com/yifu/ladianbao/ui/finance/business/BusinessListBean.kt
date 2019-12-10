@@ -1,7 +1,7 @@
 package com.yifu.ladianbao.ui.finance.business
 
 class BusinessListBean {
-   var page_count=""
+   var page_count=1
 
     var data = arrayListOf<DataBean>()
 
